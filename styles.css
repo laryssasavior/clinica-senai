@@ -1,0 +1,125 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #007b5e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos do banner */
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #e2f0d9;
+}
+
+.banner-text {
+    flex: 1;
+}
+
+.banner img {
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* Seção de introdução */
+main .intro {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+main .intro img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+main .intro .text h2 {
+    color: #007b5e;
+}
+
+main .intro .text p {
+    font-size: 1.1em;
+}
+
+/* Seção de especialidades */
+#especialidades {
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+#especialidades h2 {
+    text-align: center;
+}
+
+#especialidades ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#especialidades ul li {
+    background-color: #007b5e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos da galeria */
+#galeria {
+    padding: 20px;
+}
+
+#galeria h2 {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
