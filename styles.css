@@ -9,18 +9,30 @@ body {
 
 /* Estilos do cabeçalho */
 header {
+    position: fixed; /* Faz o cabeçalho ficar fixo no topo */
+    top: 0; /* Alinha o cabeçalho ao topo */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura da tela */
     background-color: #007b5e; /* Cor de fundo do cabeçalho */
     color: white; /* Cor do texto no cabeçalho */
     display: flex; /* Usa flexbox para alinhar logo e navegação */
     justify-content: space-between; /* Distribui os itens no espaço disponível */
     padding: 15px; /* Espaçamento interno do cabeçalho */
     font-weight: bold; /* Deixa o texto do cabeçalho em negrito */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
+/* Ajusta o espaço no topo do conteúdo para acomodar o cabeçalho fixo */
+main {
+    padding-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+
+/* Estilos para o logo no cabeçalho */
 header .logo img {
     height: 50px; /* Define a altura da logo */
 }
 
+/* Estilos do menu de navegação */
 header nav ul {
     list-style: none; /* Remove os marcadores da lista de navegação */
     display: flex; /* Alinha os itens da navegação horizontalmente */
@@ -169,12 +181,4 @@ main .intro .text p {
 
 #formulario-contato button:hover {
     background-color: #005f47; /* Muda a cor do botão ao passar o mouse */
-}
-
-/* Estilos do rodapé */
-footer {
-    background-color: #333; /* Cor de fundo escura */
-    color: white; /* Cor do texto */
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 20px; /* Espaçamento interno */
 }
